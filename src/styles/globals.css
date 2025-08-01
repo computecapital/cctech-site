@@ -1,5 +1,7 @@
 @custom-variant dark (&:is(.dark *));
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 :root {
   --font-size: 14px;
   --background: #1E1E1E;
@@ -122,11 +124,18 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    cursor: none; /* Hide default cursor */
   }
 
   body {
     @apply bg-background text-foreground;
     font-family: system-ui, -apple-system, sans-serif;
+    cursor: none; /* Hide default cursor */
+  }
+
+  /* Show default cursor on interactive elements that need it */
+  button, a, input, textarea, select, [role="button"], [tabindex] {
+    cursor: none !important;
   }
 
   .neon-green {

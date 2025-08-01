@@ -2,23 +2,11 @@
 
 import { useEffect, useRef } from 'react';
 
-interface Particle {
-  x: number;
-  y: number;
-  vx: number;
-  vy: number;
-  size: number;
-  opacity: number;
-  color: string;
-  life: number;
-  maxLife: number;
-  gravity: number;
-}
-
 export function MouseTrailEffect() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationRef = useRef<number>();
-  const particlesRef = useRef<Particle[]>([]);
+  const animationRef = useRef<number | null>(null);
+  const mousePos = useRef({ x: 0, y: 0 });
+  const cursorPos = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -36,81 +24,45 @@ export function MouseTrailEffect() {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
-    // Particle colors
-    const colors = ['#34FFB4', '#3CE3FF'];
-
-    // Create explosion of particles on click
-    const createExplosion = (x: number, y: number) => {
-      const particleCount = Math.random() * 8 + 6; // 6-14 particles
-      
-      for (let i = 0; i < particleCount; i++) {
-        const angle = (Math.PI * 2 * i) / particleCount + Math.random() * 0.5;
-        const velocity = Math.random() * 4 + 2; // Random velocity between 2-6
-        const size = Math.random() * 6 + 3; // 3px to 9px
-        const life = Math.random() * 30 + 40; // ~1.3 seconds at 60fps
-        
-        const particle: Particle = {
-          x: x + (Math.random() - 0.5) * 10, // Small spread around click point
-          y: y + (Math.random() - 0.5) * 10,
-          vx: Math.cos(angle) * velocity,
-          vy: Math.sin(angle) * velocity,
-          size,
-          opacity: Math.random() * 0.3 + 0.1, // 0.1 to 0.4
-          color: colors[Math.floor(Math.random() * colors.length)],
-          life,
-          maxLife: life,
-          gravity: Math.random() * 0.02 + 0.01, // Subtle gravity effect
-        };
-        
-        particlesRef.current.push(particle);
-      }
+    // Mouse move event listener
+    const handleMouseMove = (e: MouseEvent) => {
+      mousePos.current = { x: e.clientX, y: e.clientY };
     };
 
-    // Click event listener
-    const handleClick = (e: MouseEvent) => {
-      createExplosion(e.clientX, e.clientY);
-    };
-
-    document.addEventListener('click', handleClick);
+    document.addEventListener('mousemove', handleMouseMove);
 
     // Animation loop
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Update and draw particles
-      particlesRef.current = particlesRef.current.filter(particle => {
-        // Apply physics
-        particle.vy += particle.gravity; // Gravity
-        particle.x += particle.vx;
-        particle.y += particle.vy;
-        
-        // Air resistance
-        particle.vx *= 0.99;
-        particle.vy *= 0.99;
+      // Smooth following with lerp (linear interpolation)
+      const lerp = 0.15; // Adjust this value to change smoothness (lower = smoother)
+      cursorPos.current.x += (mousePos.current.x - cursorPos.current.x) * lerp;
+      cursorPos.current.y += (mousePos.current.y - cursorPos.current.y) * lerp;
 
-        // Update life and opacity
-        particle.life--;
-        const lifeRatio = particle.life / particle.maxLife;
-        particle.opacity = lifeRatio * 0.4;
-
-        // Draw particle if still alive
-        if (particle.life > 0) {
-          ctx.save();
-          
-          // Apply blur effect
-          ctx.filter = 'blur(4px)';
-          ctx.globalAlpha = particle.opacity;
-          ctx.fillStyle = particle.color;
-          
-          ctx.beginPath();
-          ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-          ctx.fill();
-          
-          ctx.restore();
-        }
-
-        return particle.life > 0;
-      });
+      // Draw the cursor circle
+      ctx.save();
+      
+      // Outer glow
+      ctx.shadowColor = '#18E492';
+      ctx.shadowBlur = 15;
+      ctx.globalAlpha = 0.8;
+      
+      // Main circle
+      ctx.fillStyle = '#18E492';
+      ctx.beginPath();
+      ctx.arc(cursorPos.current.x, cursorPos.current.y, 8, 0, Math.PI * 2);
+      ctx.fill();
+      
+      // Inner bright circle
+      ctx.shadowBlur = 0;
+      ctx.globalAlpha = 1;
+      ctx.fillStyle = '#20F4A0';
+      ctx.beginPath();
+      ctx.arc(cursorPos.current.x, cursorPos.current.y, 4, 0, Math.PI * 2);
+      ctx.fill();
+      
+      ctx.restore();
 
       animationRef.current = requestAnimationFrame(animate);
     };
@@ -119,7 +71,7 @@ export function MouseTrailEffect() {
 
     return () => {
       window.removeEventListener('resize', resizeCanvas);
-      document.removeEventListener('click', handleClick);
+      document.removeEventListener('mousemove', handleMouseMove);
       if (animationRef.current) {
         cancelAnimationFrame(animationRef.current);
       }

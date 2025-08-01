@@ -1,14 +1,13 @@
 "use client";
 
-import { useRef } from "react";
 import { Card, CardContent } from "./ui/card";
-import { 
-  TrendingUp, 
-  DollarSign, 
-  Zap, 
-  Settings, 
-  Clock, 
-  MessageSquare 
+import {
+  TrendingUp,
+  DollarSign,
+  Zap,
+  Settings,
+  Clock,
+  MessageSquare
 } from "lucide-react";
 
 export function BenefitsSection() {
@@ -81,8 +80,8 @@ export function BenefitsSection() {
                   <div className="flex items-center justify-center w-16 h-16 bg-primary/10 rounded-2xl">
                     {benefit.icon}
                   </div>
-                  <h3 className="text-white">{benefit.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <h3 className="text-[rgba(255,255,255,1)] font-[DM_Sans] font-bold text-[20px] text-[20px] not-italic">{benefit.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed font-[DM_Sans]">
                     {benefit.description}
                   </p>
                 </div>
