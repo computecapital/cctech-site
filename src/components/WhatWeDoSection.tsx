@@ -16,56 +16,92 @@ export function WhatWeDoSection() {
     {
       icon: <FileText className="w-6 h-6 text-primary" />,
       title: "Automação de Briefing",
-      description: "Bot de coleta inteligente que transforma respostas de cliente em briefing estruturado, já integrado ao seu PM favorito.",
-      result: "-80% do tempo gasto em entrevistas e formatação; projetos começam dias antes.",
+      description: [
+        "Coleta respostas do cliente",
+        "Gera briefing estruturado",
+        "Integra-se ao seu PM",
+      ],
+      result: "Economize 80% do tempo e inicie seu projeto rapidamente.",
     },
     {
       icon: <Target className="w-6 h-6 text-primary" />,
       title: "Planejamento de Campanha",
-      description: "Motor de previsão que cruza histórico da marca, tendências de mercado e dados de mídia para sugerir canais, verba e KPIs ideais.",
-      result: "Planos 3x mais rápidos e com até 15% melhor ROAS médio verificado.",
+      description: [
+        "Analisa histórico da marca",
+        "Cruza tendências de mercado",
+        "Sugere canais, verba e KPIs",
+      ],
+      result: "Planos 3x mais rápidos e ROAS 15% maior.",
     },
     {
       icon: <Palette className="w-6 h-6 text-primary" />,
       title: "Criação Dinâmica",
-      description: "Pipeline que gera variantes de criativos (texto, imagem, vídeo) e faz teste A/B contínuo, aprendendo com resultados em tempo real.",
-      result: "Melhora de 25% no CTR médio sem aumentar horas de design.",
+      description: [
+        "Gera variações de texto, imagem e vídeo",
+        "Executa testes A/B contínuos",
+        "Aprende em tempo real",
+      ],
+      result: "CTR sobe 25% sem horas extras de design.",
     },
     {
       icon: <Users className="w-6 h-6 text-primary" />,
       title: "Lead Scoring & Routing",
-      description: "Modelo preditivo que pontua leads em tempo real e distribui automaticamente para o vendedor certo, via CRM.",
-      result: "Ciclo de vendas reduzido em 32%; mais foco nos leads quentes.",
+      description: [
+        "Pontua leads em segundos",
+        "Identifica o vendedor ideal",
+        "Envia via CRM",
+      ],
+      result: "Ciclo de vendas com foco nos leads quentes.",
     },
     {
       icon: <MessageCircle className="w-6 h-6 text-primary" />,
       title: "Chatbots de Pré-venda",
-      description: "Assistentes treinados com dados do cliente que respondem dúvidas, capturam briefing inicial e qualificam prospects 24/7.",
-      result: "Conversão de visitantes em MQL sobe 18%; atendimento 24h sem headcount extra.",
+      description: [
+        "Respondem como humanos, 24/7",
+        "Capturam briefing inicial",
+        "Qualificam prospects",
+      ],
+      result: "Conversão em MQL +18% sem equipe extra.",
     },
     {
       icon: <TrendingUp className="w-6 h-6 text-primary" />,
       title: "Forecast de Receita",
-      description: "Algoritmo que projeta receita por carteira e campanha, usando dados de mídia, sazonalidade e funil de vendas.",
-      result: "Decisões de orçamento sustentadas por previsões com ±5% de erro.",
+      description: [
+        "Projeta receita por carteira",
+        "Considera sazonalidade e funil",
+        "Erro médio ±5 %",
+      ],
+      result: "Orçamentos guiados por previsões quase sem erro.",
     },
     {
       icon: <BarChart3 className="w-6 h-6 text-primary" />,
       title: "Automação de Relatórios",
-      description: "Sistema que coleta métricas de múltiplas fontes, interpreta variações e gera dashboards e PDFs comentados em segundos.",
-      result: "Economiza em média 6h/analista/semana; relatórios prontos antes da reunião.",
+      description: [
+        "Coleta métricas de várias fontes",
+        "Interpreta variações",
+        "Gera dashboards e PDFs",
+      ],
+      result: "Poupa 6h por analista/semana e antecipa relatórios.",
     },
     {
       icon: <Eye className="w-6 h-6 text-primary" />,
       title: "Detecção de Oportunidades",
-      description: "Análise contínua de base de clientes e mercado para sinalizar upsell, cross-sell ou risco de churn.",
-      result: "Incremento de 10-12% em receita recorrente; churn precoce cai 20%.",
+      description: [
+        "Monitora base de clientes",
+        "Sinaliza upsell, cross-sell e churn",
+        "Alerta em tempo real",
+      ],
+      result: "Reduza o churn precoce com eficiência.",
     },
     {
       icon: <Workflow className="w-6 h-6 text-primary" />,
       title: "Otimização de Workflow",
-      description: "Orquestrador de tarefas que prioriza jobs, prevê gargalos e ajusta prazos dinamicamente, integrado ao Slack/Teams.",
-      result: "Times criativos entregam 20% mais jobs sem horas extras.",
+      description: [
+        "Prioriza tarefas e prazos",
+        "Prevê gargalos",
+        "Integra Slack/Teams",
+      ],
+      result: "Times criativos produzem mais, sem horas extras.",
     },
   ];
 
@@ -98,9 +134,16 @@ export function WhatWeDoSection() {
                     </div>
                     <h3 className="text-white text-lg">{service.title}</h3>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {service.description}
-                  </p>
+                  <div className="space-y-1 lg:space-y-2">
+                    {service.description.map((item, idx) => (
+                      <p
+                        key={idx}
+                        className="text-white/80 leading-relaxed text-sm lg:text-base"
+                      >
+                        ⦁ {item}
+                      </p>
+                    ))}
+                  </div>
                   <div className="pt-2">
                     <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
                       {service.result}
