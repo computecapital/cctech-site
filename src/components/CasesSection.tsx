@@ -1,7 +1,14 @@
 "use client";
 
-import { useState, useRef  } from "react";
-import { ChevronLeft, ChevronRight, Scale, Users, Building2, ExternalLink } from "lucide-react";
+import { useState, useRef } from "react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  Scale,
+  Users,
+  Building2,
+  ExternalLink,
+} from "lucide-react";
 
 // // Import background images
 // import advocacyBg from "figma:asset/c426f3c88540b4884ec700e45c10ca8c413e0904.png";
@@ -41,77 +48,91 @@ export function CasesSection() {
       id: 1,
       icon: <Scale className="w-8 h-8" />,
       title: "IA para Escritórios de Advocacia",
-      challenge: "Análise manual de contratos consumia 80% do tempo dos advogados, gerando gargalos na operação e reduzindo a capacidade de atendimento a novos clientes.",
+      challenge:
+        "Advogados que lidam com processos volumosos perdiam dias analisando documentos, o que atrasava prazos e comprometia a estratégia jurídica.",
       solution: [
-        "• IA para análise automática de cláusulas contratuais",
-        "• Identificação de riscos e inconsistências em tempo real",
-        "• Geração de resumos executivos automáticos",
-        "• Integração com sistema de gestão jurídica existente"
+        "• IA conversacional especializada em Direito Processual",
+        "• Leitura e organização cronológica de processos em minutos",
+        "• Respostas em linguagem natural como assistente jurídico on-demand",
+        "• Geração de dossiê com resumo dos fatos e cálculo de prescrição",
+        "• Sugestão de teses com base em precedentes e banco jurídico proprietário",
+        "• Produção automática de petições prontas para protocolo",
       ],
       results: [
-        "• 75% de redução no tempo de análise contratual",
-        "• 300% de aumento na capacidade de atendimento",
-        "• 95% de precisão na identificação de cláusulas críticas",
-        "• ROI de 400% em 6 meses"
+        "• Redução da análise de documentos de dias para horas",
+        "• Teses mais precisas com base em dados e jurisprudência atualizada",
+        "• Economia operacional com menos horas em tarefas repetitivas",
+        "• Entrega de petições até 3x mais rápida",
       ],
-      quote: "A IA transformou nossa operação. Conseguimos focar no que realmente importa: estratégia jurídica e relacionamento com clientes.",
+      quote:
+        "Transformamos pilhas de processos em insights acionáveis e petições prontas, para que o advogado foque no que faz diferença: a estratégia de defesa.",
       author: "Dr. Ricardo Mendes",
       company: "Silva & Associados",
-      backgroundImage: '/cases-advlabs-bg.webp?url',
-      illustrationImage: '/cases-advlabs.webp?url',
+      backgroundImage: "/cases-advlabs-bg.webp?url",
+      illustrationImage: "/cases-advlabs.webp?url",
       clientWebsite: "https://silva-associados.com.br",
-      authorAvatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+      authorAvatar:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     },
     {
       id: 2,
       icon: <Users className="w-8 h-8" />,
       title: "IA para Equipes Comerciais",
-      challenge: "Time de vendas perdia 60% do tempo em qualificação manual de leads, resultando em baixa conversão e ciclo de vendas longo.",
+      challenge:
+        "Leads gerados por tráfego pago chegavam fora do horário comercial ou em volumes que sobrecarregavam o time de SDR, esfriando contatos e aumentando o CAC.",
       solution: [
-        "• IA para scoring automático de leads",
-        "• Análise preditiva de propensão de compra",
-        "• Personalização automática de abordagens",
-        "• Integração com CRM e ferramentas de comunicação"
+        "• IA de Vendas que atua como SDR 24/7",
+        "• Atendimento instantâneo via WhatsApp e chat do site",
+        "• Conversa como especialista treinado na metodologia da empresa",
+        "• Qualificação em tempo real e apresentação da proposta de valor",
+        "• Fechamento de ponta a ponta ou agendamento com vendedor",
+        "• Aprendizado contínuo com feedback integrado ao CRM",
       ],
       results: [
-        "• 85% de melhoria na qualificação de leads",
-        "• 50% de redução no ciclo de vendas",
-        "• 180% de aumento na taxa de conversão",
-        "• 250% de crescimento no faturamento"
+        "• Tempo de resposta reduzido de horas para segundos",
+        "• Aumento de até 40% na taxa de conversão em mídia paga",
+        "• Redução do CAC com qualificação padronizada",
+        "• Mais reuniões qualificadas no pipeline para negociações estratégicas",
       ],
-      quote: "Nossa equipe agora foca apenas em leads qualificados. A IA fez nosso time de 5 vendedores render como 15.",
+      quote:
+        "Sua equipe nunca mais perde um lead - a IA responde, qualifica e vende enquanto você dorme.",
       author: "Marina Silva",
       company: "TechSales Pro",
-      backgroundImage: '/cases-sorte-bg.webp?url',
-      illustrationImage: '/cases-sorte.webp?url',
+      backgroundImage: "/cases-sorte-bg.webp?url",
+      illustrationImage: "/cases-sorte.webp?url",
       clientWebsite: "https://techsales-pro.com",
-      authorAvatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+      authorAvatar:
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
     },
     {
       id: 3,
       icon: <Building2 className="w-8 h-8" />,
       title: "IA para Vistorias no Setor Imobiliário",
-      challenge: "Vistorias manuais demoravam 3 horas por imóvel, com alta margem de erro humano e inconsistência entre avaliadores.",
+      challenge:
+        "Vistoriadores gastavam horas registrando detalhes de imóveis manualmente, gerando riscos de erro e retrabalho após o expediente.",
       solution: [
-        "• IA para análise automática de fotos de imóveis",
-        "• Detecção de problemas estruturais e acabamentos",
-        "• Geração automática de laudos padronizados",
-        "• App mobile para coleta de dados em campo"
+        "• IA de Vistoria que transforma fotos em relatórios completos",
+        "• Upload único de imagens pelo vistoriador",
+        "• Detecção automática de cômodos, riscos e inconformidades",
+        "• Geração de descrição técnica-comercial automática",
+        "• Relatório formatado (PDF ou Word) em minutos, pronto para envio",
       ],
       results: [
-        "• 70% de redução no tempo de vistoria",
-        "• 90% de consistência entre avaliações",
-        "• 400% de aumento na capacidade operacional",
-        "• Redução de 80% em retrabalhos"
+        "• Redução de até 80% no tempo de elaboração de laudos",
+        "• Capacidade de vistorias diárias triplicada sem sobrecarga",
+        "• Relatórios padronizados que reduzem disputas sobre danos",
+        "• Entrega no mesmo dia, acelerando a assinatura de contratos",
       ],
-      quote: "Conseguimos escalar nossa operação sem contratar mais pessoal. A IA garantiu qualidade e velocidade que não imaginávamos.",
+      quote:
+        "Você faz as fotos; a IA entrega o laudo completo — rápido, preciso e sem dor de cabeça.",
       author: "Carlos Pereira",
       company: "Avalia Imóveis",
-      backgroundImage: '/cases-remax-bg.webp?url',
-      illustrationImage: '/cases-remax.webp?url',
+      backgroundImage: "/cases-remax-bg.webp?url",
+      illustrationImage: "/cases-remax.webp?url",
       clientWebsite: "https://avalia-imoveis.com.br",
-      authorAvatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
-    }
+      authorAvatar:
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+    },
   ];
 
   const nextSlide = () => {
@@ -127,7 +148,7 @@ export function CasesSection() {
   };
 
   const handleClientLogoClick = (website: string) => {
-    window.open(website, '_blank', 'noopener,noreferrer');
+    window.open(website, "_blank", "noopener,noreferrer");
   };
 
   // Mouse drag handlers
@@ -172,25 +193,28 @@ export function CasesSection() {
   };
 
   return (
-    <section id="cases" className="py-16 lg:py-24 cases-section relative overflow-hidden">
+    <section
+      id="cases"
+      className="py-16 lg:py-24 cases-section relative overflow-hidden"
+    >
       {/* Dynamic Background */}
       <div className="absolute inset-0 transition-all duration-700 ease-out">
         {cases.map((caseItem, index) => (
           <div
             key={`bg-${caseItem.id}`}
             className={`absolute inset-0 transition-opacity duration-700 ease-out ${
-              index === currentIndex ? 'opacity-100' : 'opacity-0'
+              index === currentIndex ? "opacity-100" : "opacity-0"
             }`}
             style={{
               backgroundImage: `url(${caseItem.backgroundImage})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-              filter: 'blur(8px) brightness(0.3) contrast(1.2)',
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              filter: "blur(8px) brightness(0.3) contrast(1.2)",
             }}
           />
         ))}
-        
+
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#0E0E10]/80 via-[#0E0E10]/90 to-[#0E0E10]/95" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0E0E10]/60 via-transparent to-[#0E0E10]/60" />
@@ -203,7 +227,8 @@ export function CasesSection() {
             Cases de <span className="gradient-text">sucesso</span>
           </h2>
           <p className="text-lg text-white/60 max-w-3xl mx-auto leading-relaxed">
-            Resultados reais de clientes que transformaram seus negócios com nossa IA
+            Resultados reais de clientes que transformaram seus negócios com
+            nossa IA
           </p>
         </div>
 
@@ -214,23 +239,23 @@ export function CasesSection() {
             onClick={prevSlide}
             className="absolute left-0 lg:left-4 top-1/2 -translate-y-1/2 z-20 w-14 h-14 lg:w-16 lg:h-16 flex items-center justify-center bg-primary/10 backdrop-blur-sm border border-primary/20 rounded-full hover:bg-primary/20 hover:scale-110 transition-all duration-300 group shadow-lg"
             style={{
-              background: 'linear-gradient(135deg, rgba(24, 228, 146, 0.1) 0%, rgba(24, 228, 146, 0.05) 100%)',
+              background:
+                "linear-gradient(135deg, rgba(24, 228, 146, 0.1) 0%, rgba(24, 228, 146, 0.05) 100%)",
             }}
           >
             <ChevronLeft className="w-7 h-7 lg:w-8 lg:h-8 text-primary group-hover:text-white transition-colors drop-shadow-lg" />
           </button>
-          
+
           <button
             onClick={nextSlide}
             className="absolute right-0 lg:right-4 top-1/2 -translate-y-1/2 z-20 w-14 h-14 lg:w-16 lg:h-16 flex items-center justify-center bg-primary/10 backdrop-blur-sm border border-primary/20 rounded-full hover:bg-primary/20 hover:scale-110 transition-all duration-300 group shadow-lg"
             style={{
-              background: 'linear-gradient(135deg, rgba(24, 228, 146, 0.1) 0%, rgba(24, 228, 146, 0.05) 100%)',
+              background:
+                "linear-gradient(135deg, rgba(24, 228, 146, 0.1) 0%, rgba(24, 228, 146, 0.05) 100%)",
             }}
           >
             <ChevronRight className="w-7 h-7 lg:w-8 lg:h-8 text-primary group-hover:text-white transition-colors drop-shadow-lg" />
           </button>
-
-
 
           {/* Carousel */}
           <div
@@ -251,29 +276,35 @@ export function CasesSection() {
               }}
             >
               {cases.map((caseItem, index) => (
-                <div key={caseItem.id} className="w-full flex-shrink-0 px-4 lg:px-8">
+                <div
+                  key={caseItem.id}
+                  className="w-full flex-shrink-0 px-4 lg:px-8"
+                >
                   <div className="mx-auto max-w-2xl">
                     {/* Card with increased height for new elements */}
-                    <div 
+                    <div
                       className={`text-left glassmorphism-card p-6 lg:p-8 h-[720px] lg:h-[900px] transition-all duration-500 flex flex-col ${
-                        index === currentIndex 
-                          ? 'scale-100 opacity-100' 
-                          : 'scale-95 opacity-60'
+                        index === currentIndex
+                          ? "scale-100 opacity-100"
+                          : "scale-95 opacity-60"
                       }`}
                       style={{
-                        background: 'rgba(255, 255, 255, 0.08)',
-                        backdropFilter: 'blur(20px)',
-                        border: '1px solid rgba(255, 255, 255, 0.12)',
+                        background: "rgba(255, 255, 255, 0.08)",
+                        backdropFilter: "blur(20px)",
+                        border: "1px solid rgba(255, 255, 255, 0.12)",
                       }}
                     >
                       {/* Company Logo/Illustration at the top */}
                       <div className="flex justify-center mb-4">
                         <div className="relative">
                           <button
-                            onClick={() => handleClientLogoClick(caseItem.clientWebsite)}
-                            className="group relative overflow-hidden rounded-lg border border-white/20 hover:border-primary/50 transition-all duration-300 hover:scale-105 w-32 h-32 lg:w-40 lg:h-40 flex items-center justify-center p-4"
-                            style={{ 
-                              background: 'linear-gradient(135deg, #40d86a 0%, #18e492 100%)'
+                            onClick={() =>
+                              handleClientLogoClick(caseItem.clientWebsite)
+                            }
+                            className="group relative overflow-hidden rounded-lg border border-white/20 hover:border-primary/50 transition-all duration-300 hover:scale-105 w-32 h-32 lg:w-15 lg:h-15 flex items-center justify-center p-4"
+                            style={{
+                              background:
+                                "linear-gradient(135deg, #40d86a 0%, #18e492 100%)",
                             }}
                           >
                             <img
@@ -281,13 +312,16 @@ export function CasesSection() {
                               alt={`Logo ${caseItem.company}`}
                               className="w-full h-full object-contain transition-all duration-300 group-hover:brightness-110 group-hover:scale-110"
                             />
-                            
+
                             {/* Hover effect overlay */}
                             <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
-                            
+
                             {/* "Saiba Mais" text with external link icon - inside button on hover */}
                             <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 backdrop-blur-sm rounded-full px-3 py-1 whitespace-nowrap">
-                              <span className="text-xs font-medium text-white" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+                              <span
+                                className="text-xs font-medium text-white"
+                                style={{ fontFamily: "DM Sans, sans-serif" }}
+                              >
                                 Saiba Mais
                               </span>
                               <ExternalLink className="w-3 h-3 text-white" />
@@ -299,9 +333,7 @@ export function CasesSection() {
                       {/* Header with icon and title - moved down */}
                       <div className="flex items-center gap-4 mb-6 lg:mb-8">
                         <div className="flex items-center justify-center w-12 h-12 lg:w-16 lg:h-16 bg-primary/10 rounded-2xl">
-                          <div className="text-primary">
-                            {caseItem.icon}
-                          </div>
+                          <div className="text-primary">{caseItem.icon}</div>
                         </div>
                         <h3 className="text-xl lg:text-2xl font-bold text-white">
                           {caseItem.title}
@@ -312,7 +344,9 @@ export function CasesSection() {
                       <div className="space-y-6 lg:space-y-8 flex-1 overflow-y-auto">
                         {/* Challenge */}
                         <div>
-                          <h4 className="text-primary font-semibold mb-2 lg:mb-3 text-base lg:text-lg">Desafio:</h4>
+                          <h4 className="text-primary font-semibold mb-2 lg:mb-3 text-base lg:text-lg">
+                            Desafio:
+                          </h4>
                           <p className="text-white/80 leading-relaxed text-sm lg:text-base">
                             {caseItem.challenge}
                           </p>
@@ -320,10 +354,15 @@ export function CasesSection() {
 
                         {/* Solution */}
                         <div>
-                          <h4 className="text-primary font-semibold mb-2 lg:mb-3 text-base lg:text-lg">Solução:</h4>
+                          <h4 className="text-primary font-semibold mb-2 lg:mb-3 text-base lg:text-lg">
+                            Solução:
+                          </h4>
                           <div className="space-y-1 lg:space-y-2">
                             {caseItem.solution.map((item, idx) => (
-                              <p key={idx} className="text-white/80 leading-relaxed text-sm lg:text-base">
+                              <p
+                                key={idx}
+                                className="text-white/80 leading-relaxed text-sm lg:text-base"
+                              >
                                 {item}
                               </p>
                             ))}
@@ -332,10 +371,15 @@ export function CasesSection() {
 
                         {/* Results */}
                         <div>
-                          <h4 className="text-primary font-semibold mb-2 lg:mb-3 text-base lg:text-lg">Resultados:</h4>
+                          <h4 className="text-primary font-semibold mb-2 lg:mb-3 text-base lg:text-lg">
+                            Resultados:
+                          </h4>
                           <div className="space-y-1 lg:space-y-2">
                             {caseItem.results.map((item, idx) => (
-                              <p key={idx} className="text-white/80 leading-relaxed text-sm lg:text-base">
+                              <p
+                                key={idx}
+                                className="text-white/80 leading-relaxed text-sm lg:text-base"
+                              >
                                 {item}
                               </p>
                             ))}
@@ -348,7 +392,7 @@ export function CasesSection() {
                         <blockquote className="text-white italic text-base lg:text-lg leading-relaxed mb-4 font-[DM_Sans]">
                           "{caseItem.quote}"
                         </blockquote>
-                        
+
                         {/* Author info with avatar */}
                         <div className="flex justify-end">
                           <div className="flex items-center gap-3">
@@ -360,7 +404,7 @@ export function CasesSection() {
                                 {caseItem.company}
                               </div>
                             </div>
-                            
+
                             {/* Circular avatar */}
                             <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full border-2 border-primary/30 overflow-hidden bg-white/5 flex-shrink-0">
                               <img
@@ -387,8 +431,8 @@ export function CasesSection() {
                 onClick={() => goToSlide(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? 'bg-primary scale-125'
-                    : 'bg-white/30 hover:bg-white/50'
+                    ? "bg-primary scale-125"
+                    : "bg-white/30 hover:bg-white/50"
                 }`}
               />
             ))}

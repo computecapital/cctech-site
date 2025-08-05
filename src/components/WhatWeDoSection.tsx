@@ -16,56 +16,56 @@ export function WhatWeDoSection() {
     {
       icon: <FileText className="w-6 h-6 text-primary" />,
       title: "Automação de Briefing",
-      description: "bot coleta dados e transforma em briefing integrado ao PM",
-      result: "–80% de tempo gasto",
+      description: "Bot de coleta inteligente que transforma respostas de cliente em briefing estruturado, já integrado ao seu PM favorito.",
+      result: "-80% do tempo gasto em entrevistas e formatação; projetos começam dias antes.",
     },
     {
       icon: <Target className="w-6 h-6 text-primary" />,
       title: "Planejamento de Campanha",
-      description: "motor de previsão sugere canais e KPIs",
-      result: "15% mais ROAS",
+      description: "Motor de previsão que cruza histórico da marca, tendências de mercado e dados de mídia para sugerir canais, verba e KPIs ideais.",
+      result: "Planos 3x mais rápidos e com até 15% melhor ROAS médio verificado.",
     },
     {
       icon: <Palette className="w-6 h-6 text-primary" />,
       title: "Criação Dinâmica",
-      description: "gera criativos e testa A/B em tempo real",
-      result: "+25% de CTR",
+      description: "Pipeline que gera variantes de criativos (texto, imagem, vídeo) e faz teste A/B contínuo, aprendendo com resultados em tempo real.",
+      result: "Melhora de 25% no CTR médio sem aumentar horas de design.",
     },
     {
       icon: <Users className="w-6 h-6 text-primary" />,
       title: "Lead Scoring & Routing",
-      description: "pontua e distribui leads automaticamente",
-      result: "ciclo –32%",
+      description: "Modelo preditivo que pontua leads em tempo real e distribui automaticamente para o vendedor certo, via CRM.",
+      result: "Ciclo de vendas reduzido em 32%; mais foco nos leads quentes.",
     },
     {
       icon: <MessageCircle className="w-6 h-6 text-primary" />,
       title: "Chatbots de Pré-venda",
-      description: "qualificam prospects 24/7",
-      result: "+18% em MQL",
+      description: "Assistentes treinados com dados do cliente que respondem dúvidas, capturam briefing inicial e qualificam prospects 24/7.",
+      result: "Conversão de visitantes em MQL sobe 18%; atendimento 24h sem headcount extra.",
     },
     {
       icon: <TrendingUp className="w-6 h-6 text-primary" />,
       title: "Forecast de Receita",
-      description: "projeta receita com margem de erro ±5%",
-      result: "±5% precisão",
+      description: "Algoritmo que projeta receita por carteira e campanha, usando dados de mídia, sazonalidade e funil de vendas.",
+      result: "Decisões de orçamento sustentadas por previsões com ±5% de erro.",
     },
     {
       icon: <BarChart3 className="w-6 h-6 text-primary" />,
       title: "Automação de Relatórios",
-      description: "gera dashboards comentados em segundos",
-      result: "economia de 6h/analista/semana",
+      description: "Sistema que coleta métricas de múltiplas fontes, interpreta variações e gera dashboards e PDFs comentados em segundos.",
+      result: "Economiza em média 6h/analista/semana; relatórios prontos antes da reunião.",
     },
     {
       icon: <Eye className="w-6 h-6 text-primary" />,
       title: "Detecção de Oportunidades",
-      description: "identifica upsell e churn",
-      result: "+10% em receita recorrente",
+      description: "Análise contínua de base de clientes e mercado para sinalizar upsell, cross-sell ou risco de churn.",
+      result: "Incremento de 10-12% em receita recorrente; churn precoce cai 20%.",
     },
     {
       icon: <Workflow className="w-6 h-6 text-primary" />,
       title: "Otimização de Workflow",
-      description: "orquestra tarefas, previne gargalos",
-      result: "+20% de entregas",
+      description: "Orquestrador de tarefas que prioriza jobs, prevê gargalos e ajusta prazos dinamicamente, integrado ao Slack/Teams.",
+      result: "Times criativos entregam 20% mais jobs sem horas extras.",
     },
   ];
 
@@ -80,7 +80,7 @@ export function WhatWeDoSection() {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-[DM_Sans]">
-            Do briefing à renovação de contrato, plugamos AI onde gera ROI
+            Do briefing à renovação de contrato, plugamos AI onde gera ROI.
           </p>
         </div>
 

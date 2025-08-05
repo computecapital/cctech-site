@@ -15,32 +15,32 @@ export function BenefitsSection() {
     {
       icon: <TrendingUp className="w-8 h-8 text-primary" />,
       title: "Aumento de receita",
-      description: "agentes 24h que aceleram vendas desde o 1º mês",
+      description: "Agentes 24/7 aceleram vendas, eliminam gargalos e mostram retorno já no primeiro mês, custando muito menos.",
     },
     {
       icon: <DollarSign className="w-8 h-8 text-primary" />,
       title: "Redução de custos",
-      description: "substitui contratações com IA por fração do preço",
+      description: "Substitua equipes caras por agentes inteligentes que gerenciam CRM, suporte e prospecção com eficiência superior e custo mínimo.",
     },
     {
       icon: <Zap className="w-8 h-8 text-primary" />,
       title: "Implementação veloz",
-      description: "discovery, MVP e roll-out em semanas",
+      description: "Discovery, MVP e roll-out ágil; da primeira call à operação completa em poucas semanas.",
     },
     {
       icon: <Settings className="w-8 h-8 text-primary" />,
       title: "Personalização completa",
-      description: "criada sob medida para cada cliente",
+      description: "Projetamos agentes sob medida após entender suas dores, refletindo seus fluxos, linguagem e metas de negócio.",
     },
     {
       icon: <Clock className="w-8 h-8 text-primary" />,
       title: "Atendimento 24h",
-      description: "suporte comercial a qualquer hora",
+      description: "Equipe comercial online 24h para esclarecer dúvidas, iniciar projetos e oferecer suporte consultivo sempre que precisar.",
     },
     {
       icon: <MessageSquare className="w-8 h-8 text-primary" />,
       title: "Suporte técnico e humano",
-      description: "canal direto com nosso time via WhatsApp/Telegram",
+      description: "Grupo dedicado em WhatsApp ou Telegram garante respostas rápidas, melhorias contínuas e alinhamento constante ao seu negócio.",
     },
   ];
 
