@@ -91,7 +91,7 @@ export function WhatWeDoSection() {
               className="bg-card border-white/10 hover:border-primary/30 transition-all duration-300 hover:scale-105"
             >
               <CardContent className="p-6">
-                <div className="space-y-4">
+                <div className="space-y-4 text-left">
                   <div className="flex items-center space-x-3">
                     <div className="flex items-center justify-center w-10 h-10 bg-primary/10 rounded-lg">
                       {service.icon}
