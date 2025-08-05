@@ -283,7 +283,7 @@ export function CasesSection() {
                   <div className="mx-auto max-w-2xl">
                     {/* Card with increased height for new elements */}
                     <div
-                      className={`text-left glassmorphism-card p-6 lg:p-8 h-[720px] lg:h-[950px] transition-all duration-500 flex flex-col ${
+                      className={`text-left glassmorphism-card p-6 lg:p-8 h-[720px] lg:h-[900px] transition-all duration-500 flex flex-col ${
                         index === currentIndex
                           ? "scale-100 opacity-100"
                           : "scale-95 opacity-60"
@@ -341,10 +341,10 @@ export function CasesSection() {
                       </div>
 
                       {/* Content - grows to fill available space */}
-                      <div className="space-y-6 lg:space-y-8 flex-1 overflow-y-auto">
+                      <div className="space-y-6 lg:space-y-5 flex-1 overflow-y-auto">
                         {/* Challenge */}
                         <div>
-                          <h4 className="text-primary font-semibold mb-2 lg:mb-3 text-base lg:text-lg">
+                          <h4 className="text-primary font-semibold mb-2 lg:mb-2 text-base lg:text-lg">
                             Desafio:
                           </h4>
                           <p className="text-white/80 leading-relaxed text-sm lg:text-base">
@@ -374,7 +374,7 @@ export function CasesSection() {
                           <h4 className="text-primary font-semibold mb-2 lg:mb-3 text-base lg:text-lg">
                             Resultados:
                           </h4>
-                          <div className="space-y-1 lg:space-y-2">
+                          <div className="space-y-1 lg:space-y-1">
                             {caseItem.results.map((item, idx) => (
                               <p
                                 key={idx}
