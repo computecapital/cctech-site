@@ -283,7 +283,7 @@ export function CasesSection() {
                   <div className="mx-auto max-w-2xl">
                     {/* Card with increased height for new elements */}
                     <div
-                      className={`text-left glassmorphism-card p-6 lg:p-8 h-[720px] lg:h-[900px] transition-all duration-500 flex flex-col ${
+                      className={`text-left glassmorphism-card p-6 lg:p-8 h-[720px] lg:h-[950px] transition-all duration-500 flex flex-col ${
                         index === currentIndex
                           ? "scale-100 opacity-100"
                           : "scale-95 opacity-60"
@@ -301,7 +301,7 @@ export function CasesSection() {
                             onClick={() =>
                               handleClientLogoClick(caseItem.clientWebsite)
                             }
-                            className="group relative overflow-hidden rounded-lg border border-white/20 hover:border-primary/50 transition-all duration-300 hover:scale-105 w-32 h-32 lg:w-15 lg:h-15 flex items-center justify-center p-4"
+                            className="group relative overflow-hidden rounded-lg border border-white/20 hover:border-primary/50 transition-all duration-300 hover:scale-105 w-20 h-20 lg:w-30 lg:h-30 flex items-center justify-center p-4"
                             style={{
                               background:
                                 "linear-gradient(135deg, #40d86a 0%, #18e492 100%)",
@@ -357,7 +357,7 @@ export function CasesSection() {
                           <h4 className="text-primary font-semibold mb-2 lg:mb-3 text-base lg:text-lg">
                             Solução:
                           </h4>
-                          <div className="space-y-1 lg:space-y-2">
+                          <div className="space-y-1 lg:space-y-1">
                             {caseItem.solution.map((item, idx) => (
                               <p
                                 key={idx}
