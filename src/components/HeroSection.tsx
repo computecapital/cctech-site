@@ -14,7 +14,7 @@ export function HeroSection() {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="space-y-8">
+          <div className="text-left space-y-8">
             <div className="space-y-6">
               <h1 className="text-4xl lg:text-6xl text-white leading-tight font-[DM_Sans] animated-title split-title">
                 <span className="word" style={{'--word-index': 0} as React.CSSProperties}>Agentes</span>{" "}
