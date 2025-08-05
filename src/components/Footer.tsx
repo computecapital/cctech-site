@@ -94,10 +94,10 @@ export function Footer() {
             </h3>
             <div className="space-y-3 text-muted-foreground">
               <p style={{ fontFamily: "DM Sans, sans-serif" }}>
-                contato@cctech.com.br
+                contato@compute.capital
               </p>
               <p style={{ fontFamily: "DM Sans, sans-serif" }}>
-                +55 (81) 99999-9999
+                +55 (81) 99900-3360
               </p>
               <p style={{ fontFamily: "DM Sans, sans-serif" }}>Recife, PE</p>
             </div>
@@ -113,21 +113,27 @@ export function Footer() {
             </h3>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.instagram.com/computecapital/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center w-10 h-10 bg-primary/10 rounded-lg hover:bg-primary/20 transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5 text-primary" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/compute-capital/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center w-10 h-10 bg-primary/10 rounded-lg hover:bg-primary/20 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5 text-primary" />
               </a>
               <a
-                href="#"
+                href="https://wa.me/5581999003360"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center w-10 h-10 bg-primary/10 rounded-lg hover:bg-primary/20 transition-colors"
                 aria-label="WhatsApp"
               >
