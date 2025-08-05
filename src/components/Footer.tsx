@@ -20,14 +20,14 @@ export function Footer() {
             <div className="space-y-4">
               <div className="flex items-center">
                 <img
-                  src="/public/cc-tech-header-logo.webp?url"
+                  src="/cc-tech-header-logo.webp?url"
                   alt="CCTECH Logo"
                   className="h-16 w-auto object-contain"
                 />
               </div>
               <div className="flex items-center justify-start">
                 <img
-                  src="/public/cc-footer-logo.webp?url"
+                  src="/cc-footer-logo.webp?url"
                   alt="Compute Capital Logo"
                   className="h-12 w-auto object-contain opacity-80"
                 />

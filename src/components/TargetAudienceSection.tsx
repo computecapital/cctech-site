@@ -8,28 +8,28 @@ export function TargetAudienceSection() {
       title: "Agências de marketing digital",
       description: "liberam o time criativo de tarefas manuais",
       blogUrl: "/blog/agencias-marketing-digital-ia",
-      image: '/public/target-audience-marketing-digital.webp?url',
+      image: '/target-audience-marketing-digital.webp?url',
     },
     {
       icon: <Users className="w-6 h-6 text-primary" />,
       title: "Times de vendas e atendimento",
       description: "recebem leads prontos e insights automáticos",
       blogUrl: "/blog/times-vendas-atendimento-ia",
-      image: '/public/target-audience-time-vendas.webp?url',
+      image: '/target-audience-time-vendas.webp?url',
     },
     {
       icon: <Cog className="w-6 h-6 text-primary" />,
       title: "Empresas com RPA ou CRM",
       description: "evoluem para IA sem refazer a stack",
       blogUrl: "/blog/empresas-rpa-crm-evolucao-ia",
-      image: '/public/target-audience-empresas.webp?url',
+      image: '/target-audience-empresas.webp?url',
     },
     {
       icon: <Scale className="w-6 h-6 text-primary" />,
       title: "Escritórios de Advocacia",
       description: "automatizam o que é mecânico e escalam talento humano",
       blogUrl: "/blog/escritorios-advocacia-ia",
-      image: '/public/target-audience-escritorios.webp?url',
+      image: '/target-audience-escritorios.webp?url',
     },
   ];
 

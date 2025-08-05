@@ -52,7 +52,7 @@ export function Header() {
           {/* Center - Logo */}
           <div className="flex items-center justify-center">
             <img
-              src="/public/cc-tech-header-logo.webp?url"
+              src="/cc-tech-header-logo.webp?url"
               alt="CCTECH Logo"
               className="h-16 w-auto object-contain"
             />

@@ -57,8 +57,8 @@ export function CasesSection() {
       quote: "A IA transformou nossa operação. Conseguimos focar no que realmente importa: estratégia jurídica e relacionamento com clientes.",
       author: "Dr. Ricardo Mendes",
       company: "Silva & Associados",
-      backgroundImage: '/public/cases-advlabs-bg.webp?url',
-      illustrationImage: '/public/cases-advlabs.webp?url',
+      backgroundImage: '/cases-advlabs-bg.webp?url',
+      illustrationImage: '/cases-advlabs.webp?url',
       clientWebsite: "https://silva-associados.com.br",
       authorAvatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
     },
@@ -82,8 +82,8 @@ export function CasesSection() {
       quote: "Nossa equipe agora foca apenas em leads qualificados. A IA fez nosso time de 5 vendedores render como 15.",
       author: "Marina Silva",
       company: "TechSales Pro",
-      backgroundImage: '/public/cases-sorte-bg.webp?url',
-      illustrationImage: '/public/cases-sorte.webp?url',
+      backgroundImage: '/cases-sorte-bg.webp?url',
+      illustrationImage: '/cases-sorte.webp?url',
       clientWebsite: "https://techsales-pro.com",
       authorAvatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
     },
@@ -107,8 +107,8 @@ export function CasesSection() {
       quote: "Conseguimos escalar nossa operação sem contratar mais pessoal. A IA garantiu qualidade e velocidade que não imaginávamos.",
       author: "Carlos Pereira",
       company: "Avalia Imóveis",
-      backgroundImage: '/public/cases-remax-bg.webp?url',
-      illustrationImage: '/public/cases-remax.webp?url',
+      backgroundImage: '/cases-remax-bg.webp?url',
+      illustrationImage: '/cases-remax.webp?url',
       clientWebsite: "https://avalia-imoveis.com.br",
       authorAvatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
     }
