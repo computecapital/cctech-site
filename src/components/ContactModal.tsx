@@ -121,7 +121,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
               onChange={handleInputChange}
               required
               className="w-full px-4 py-3 bg-input-background border border-white/20 rounded-lg text-white placeholder-muted-foreground focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors"
-              placeholder="Seu nome completo"
+              placeholder="Seu nome"
               style={{ fontFamily: "DM Sans, sans-serif" }}
             />
           </div>
@@ -192,14 +192,14 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
         </form>
 
         {/* Footer info */}
-        <div className="mt-6 pt-4 border-t border-white/10">
+        {/* <div className="mt-6 pt-4 border-t border-white/10">
           <p
             className="text-xs text-muted-foreground text-center"
             style={{ fontFamily: "DM Sans, sans-serif" }}
           >
             Responderemos em até 2 horas úteis
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
