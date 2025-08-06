@@ -283,7 +283,7 @@ export function CasesSection() {
                   <div className="mx-auto max-w-2xl">
                     {/* Card with increased height for new elements */}
                     <div
-                      className={`text-left glassmorphism-card p-6 lg:p-8 h-[720px] lg:h-[900px] transition-all duration-500 flex flex-col ${
+                      className={`text-left glassmorphism-card p-6 lg:p-8 h-[600px] lg:h-[720px] transition-all duration-500 flex flex-col ${
                         index === currentIndex
                           ? "scale-100 opacity-100"
                           : "scale-95 opacity-60"
@@ -388,12 +388,11 @@ export function CasesSection() {
                       </div>
 
                       {/* Quote with author info at the bottom */}
-                      <div className="mt-6 lg:mt-8 pt-4 lg:pt-6 border-t border-white/20">
+                      {/* <div className="mt-6 lg:mt-8 pt-4 lg:pt-6 border-t border-white/20">
                         <blockquote className="text-white italic text-base lg:text-lg leading-relaxed mb-4 font-[DM_Sans]">
                           "{caseItem.quote}"
                         </blockquote>
 
-                        {/* Author info with avatar */}
                         <div className="flex justify-end">
                           <div className="flex items-center gap-3">
                             <div className="text-right">
@@ -405,7 +404,6 @@ export function CasesSection() {
                               </div>
                             </div>
 
-                            {/* Circular avatar */}
                             <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full border-2 border-primary/30 overflow-hidden bg-white/5 flex-shrink-0">
                               <img
                                 src={caseItem.authorAvatar}
@@ -415,7 +413,7 @@ export function CasesSection() {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
