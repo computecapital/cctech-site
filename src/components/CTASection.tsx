@@ -1,13 +1,10 @@
 import { Button } from "./ui/button";
 
-export function CTASection() {
-  const scrollToContact = () => {
-    const element = document.getElementById("contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+interface CTASectionProps {
+  onOpenContactModal: () => void;
+}
 
+export function CTASection({ onOpenContactModal }: CTASectionProps) {
   return (
     <section className="py-16 lg:py-24">
       <div className="container mx-auto px-4">
@@ -36,7 +33,7 @@ export function CTASection() {
             <Button
               size="lg"
               className="bg-black text-white px-8 py-4 text-lg rounded-lg hover:bg-black/90 transition-colors"
-              onClick={scrollToContact}
+              onClick={onOpenContactModal}
               style={{ fontFamily: "DM Sans, sans-serif" }}
             >
               Começar agora

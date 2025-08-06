@@ -150,10 +150,10 @@ export function Footer() {
               className="text-muted-foreground"
               style={{ fontFamily: "DM Sans, sans-serif" }}
             >
-              © 2025 CCTECH. Todos os direitos reservados.
+              © 2025 Compute Capital. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6 text-sm text-muted-foreground">
-              <a
+              {/* <a
                 href="#"
                 className="hover:text-primary transition-colors"
                 style={{ fontFamily: "DM Sans, sans-serif" }}
@@ -166,7 +166,7 @@ export function Footer() {
                 style={{ fontFamily: "DM Sans, sans-serif" }}
               >
                 Termos de Uso
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

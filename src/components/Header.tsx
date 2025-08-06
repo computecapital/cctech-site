@@ -4,7 +4,11 @@ import { useState } from "react";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 
-export function Header() {
+interface HeaderProps {
+  onOpenContactModal: () => void;
+}
+
+export function Header({ onOpenContactModal }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
@@ -62,7 +66,7 @@ export function Header() {
           <div className="flex items-center">
             <Button
               className="neon-green px-6 py-3 h-12 rounded-lg font-semibold hover:opacity-90 transition-opacity"
-              onClick={() => scrollToSection("contact")}
+              onClick={onOpenContactModal}
             >
               Começar agora
             </Button>
@@ -90,7 +94,7 @@ export function Header() {
             <div className="flex justify-center mt-6 md:hidden">
               <Button
                 className="neon-green px-8 py-3 rounded-lg font-semibold w-full max-w-xs"
-                onClick={() => scrollToSection("contact")}
+                onClick={onOpenContactModal}
               >
                 Começar agora
               </Button>
