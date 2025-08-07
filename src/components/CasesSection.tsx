@@ -7,18 +7,8 @@ import {
   Scale,
   Users,
   Building2,
-  ExternalLink,
+  // ExternalLink,
 } from "lucide-react";
-
-// // Import background images
-// import advocacyBg from "figma:asset/c426f3c88540b4884ec700e45c10ca8c413e0904.png";
-// import commercialBg from "figma:asset/fc9ebdf39bd06b31601e9d7b1ced2a26e5a5d0ea.png";
-// import realEstateBg from "figma:asset/8fbd8b026f90867f28a2139d3cffe9f5bd157d41.png";
-
-// // Import company logo illustrations
-// import advocacyIllustration from "figma:asset/bbd0f7c25aed8708d66aa7d6fd5a19c42e4f6adb.png";
-// import commercialIllustration from "figma:asset/d28e180539a507036f51cef2768edb1ee1a0a341.png";
-// import realEstateIllustration from "figma:asset/218a11c5397edcfc77b75fa896c5a82c0cc15ade.png";
 
 interface CaseItem {
   id: number;
@@ -147,9 +137,9 @@ export function CasesSection() {
     setCurrentIndex(index);
   };
 
-  const handleClientLogoClick = (website: string) => {
-    window.open(website, "_blank", "noopener,noreferrer");
-  };
+  // const handleClientLogoClick = (website: string) => {
+  //   window.open(website, "_blank", "noopener,noreferrer");
+  // };
 
   // Mouse drag handlers
   const handleMouseDown = (e: React.MouseEvent) => {
@@ -283,7 +273,7 @@ export function CasesSection() {
                   <div className="mx-auto max-w-2xl">
                     {/* Card with increased height for new elements */}
                     <div
-                      className={`text-left glassmorphism-card p-6 lg:p-8 h-[600px] lg:h-[720px] transition-all duration-500 flex flex-col ${
+                      className={`text-left glassmorphism-card p-6 lg:p-8 transition-all duration-500 flex flex-col ${
                         index === currentIndex
                           ? "scale-100 opacity-100"
                           : "scale-95 opacity-60"
@@ -295,7 +285,7 @@ export function CasesSection() {
                       }}
                     >
                       {/* Company Logo/Illustration at the top */}
-                      <div className="flex justify-center mb-4">
+                      {/* <div className="flex justify-center mb-4">
                         <div className="relative">
                           <button
                             onClick={() =>
@@ -313,10 +303,8 @@ export function CasesSection() {
                               className="w-full h-full object-contain transition-all duration-300 group-hover:brightness-110 group-hover:scale-110"
                             />
 
-                            {/* Hover effect overlay */}
                             <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
 
-                            {/* "Saiba Mais" text with external link icon - inside button on hover */}
                             <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 backdrop-blur-sm rounded-full px-3 py-1 whitespace-nowrap">
                               <span
                                 className="text-xs font-medium text-white"
@@ -328,7 +316,7 @@ export function CasesSection() {
                             </div>
                           </button>
                         </div>
-                      </div>
+                      </div> */}
 
                       {/* Header with icon and title - moved down */}
                       <div className="flex items-center gap-4 mb-6 lg:mb-8">
