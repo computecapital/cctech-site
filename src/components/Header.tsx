@@ -68,7 +68,7 @@ export function Header({ onOpenContactModal }: HeaderProps) {
               className="neon-green px-6 py-3 h-12 rounded-lg font-semibold hover:opacity-90 transition-opacity"
               onClick={onOpenContactModal}
             >
-              Começar agora
+              Cadastre-se na C2
             </Button>
           </div>
         </div>

@@ -1,107 +1,107 @@
 import { Card, CardContent } from "./ui/card";
 import {
   FileText,
-  Target,
-  Palette,
-  Users,
+  Scale,
+  Search,
   MessageCircle,
-  TrendingUp,
-  BarChart3,
-  Eye,
-  Workflow,
+  FileSignature,
+  Clock,
+  ShieldCheck,
+  PenLine,
+  GraduationCap,
 } from "lucide-react";
 
 export function WhatWeDoSection() {
   const services = [
     {
       icon: <FileText className="w-6 h-6 text-primary" />,
-      title: "Automação de Briefing",
+      title: "Análise e Chat com IA sobre Processos",
       description: [
-        "Coleta respostas do cliente",
-        "Gera briefing estruturado",
-        "Integra-se ao seu PM",
+        "Converse com a IA sobre autos e documentos",
+        "Receba insights, explicações e resumos",
+        "Acesse histórico de conversas salvas",
       ],
-      result: "Economize 80% do tempo e inicie seu projeto rapidamente.",
+      result: "✅ Tenha respostas em segundos sem ler centenas de páginas.",
     },
     {
-      icon: <Target className="w-6 h-6 text-primary" />,
-      title: "Planejamento de Campanha",
+      icon: <Scale className="w-6 h-6 text-primary" />,
+      title: "Geração de Petição",
       description: [
-        "Analisa histórico da marca",
-        "Cruza tendências de mercado",
-        "Sugere canais, verba e KPIs",
+        "Redige petições iniciais, contestações e recursos",
+        "Segue normas processuais e jurídicas",
+        "Sugere ajustes e melhorias de redação",
       ],
-      result: "Planos 3x mais rápidos e ROAS 15% maior.",
+      result: "✅ Reduza em até 70% o tempo de elaboração de petições.",
     },
     {
-      icon: <Palette className="w-6 h-6 text-primary" />,
-      title: "Criação Dinâmica",
+      icon: <Search className="w-6 h-6 text-primary" />,
+      title: "Identificação de Jurisprudência",
       description: [
-        "Gera variações de texto, imagem e vídeo",
-        "Executa testes A/B contínuos",
-        "Aprende em tempo real",
+        "Pesquisa decisões relevantes em segundos",
+        "Cruza jurisprudências por tribunal e tema",
+        "Indica probabilidade de êxito",
       ],
-      result: "CTR sobe 25% sem horas extras de design.",
-    },
-    {
-      icon: <Users className="w-6 h-6 text-primary" />,
-      title: "Lead Scoring & Routing",
-      description: [
-        "Pontua leads em segundos",
-        "Identifica o vendedor ideal",
-        "Envia via CRM",
-      ],
-      result: "Ciclo de vendas com foco nos leads quentes.",
+      result: "✅ Encontre jurisprudência em minutos, não em horas.",
     },
     {
       icon: <MessageCircle className="w-6 h-6 text-primary" />,
-      title: "Chatbots de Pré-venda",
+      title: "IA de Atendimento 24h",
       description: [
-        "Respondem como humanos, 24/7",
-        "Capturam briefing inicial",
-        "Qualificam prospects",
+        "Responde como humano no WhatsApp e site",
+        "Esclarece dúvidas iniciais de clientes",
+        "Qualifica contatos antes do advogado",
       ],
-      result: "Conversão em MQL +18% sem equipe extra.",
+      result: "✅ Atendimento contínuo sem custo extra de equipe.",
     },
     {
-      icon: <TrendingUp className="w-6 h-6 text-primary" />,
-      title: "Forecast de Receita",
+      icon: <FileSignature className="w-6 h-6 text-primary" />,
+      title: "Geração de Relatórios Jurídicos",
       description: [
-        "Projeta receita por carteira",
-        "Considera sazonalidade e funil",
-        "Erro médio ±5 %",
+        "Resume processos extensos automaticamente",
+        "Cria índice de eventos processuais",
+        "Gera relatórios prontos para anexar ou apresentar",
       ],
-      result: "Orçamentos guiados por previsões quase sem erro.",
+      result: "✅ Economize horas de leitura com relatórios prontos.",
     },
     {
-      icon: <BarChart3 className="w-6 h-6 text-primary" />,
-      title: "Automação de Relatórios",
+      icon: <Clock className="w-6 h-6 text-primary" />,
+      title: "Cálculo de Prescrição",
       description: [
-        "Coleta métricas de várias fontes",
-        "Interpreta variações",
-        "Gera dashboards e PDFs",
+        "Calcula prazos de prescrição de forma automática",
+        "Considera causas de interrupção e suspensão",
+        "Indica alertas de risco processual",
       ],
-      result: "Poupa 6h por analista/semana e antecipa relatórios.",
+      result: "✅ Elimine erros em cálculos de prazos críticos.",
     },
     {
-      icon: <Eye className="w-6 h-6 text-primary" />,
-      title: "Detecção de Oportunidades",
+      icon: <ShieldCheck className="w-6 h-6 text-primary" />,
+      title: "Sugestão de Teses de Defesa",
       description: [
-        "Monitora base de clientes",
-        "Sinaliza upsell, cross-sell e churn",
-        "Alerta em tempo real",
+        "Analisa documentos e provas do processo",
+        "Propõe linhas de defesa estratégicas",
+        "Organiza teses por relevância e chance de sucesso",
       ],
-      result: "Reduza o churn precoce com eficiência.",
+      result: "✅ Descubra ângulos de defesa que poderiam passar despercebidos.",
     },
     {
-      icon: <Workflow className="w-6 h-6 text-primary" />,
-      title: "Otimização de Workflow",
+      icon: <PenLine className="w-6 h-6 text-primary" />,
+      title: "Criação de Peças Jurídicas",
       description: [
-        "Prioriza tarefas e prazos",
-        "Prevê gargalos",
-        "Integra Slack/Teams",
+        "Estrutura peças jurídicas a partir de dados do caso",
+        "Garante clareza e precisão técnica",
+        "Sugere fundamentações legais relevantes",
       ],
-      result: "Times criativos produzem mais, sem horas extras.",
+      result: "✅ Produza peças completas com menos esforço.",
+    },
+    {
+      icon: <GraduationCap className="w-6 h-6 text-primary" />,
+      title: "Treinamento de Advogados Júnior",
+      description: [
+        "Explica fundamentos jurídicos de cada peça",
+        "Indica jurisprudências e artigos de lei aplicáveis",
+        "Gera quizzes e estudos de caso",
+      ],
+      result: "✅ Acelere a curva de aprendizado da equipe júnior.",
     },
   ];
 
@@ -116,7 +116,7 @@ export function WhatWeDoSection() {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-[DM_Sans]">
-            Do briefing à renovação de contrato, plugamos AI onde gera ROI.
+            Soluções de IA focadas no contencioso e operações jurídicas do seu escritório.
           </p>
         </div>
 

@@ -64,8 +64,7 @@ export function BenefitsSection() {
             empresa
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            Turbine a produtividade do seu time de vendas – IA para destravar o
-            comercial da sua agência
+            Potencialize sua equipe de advogados: IA para destravar a rotina jurídica
           </p>
         </div>
 
