@@ -15,32 +15,32 @@ export function BenefitsSection() {
     {
       icon: <TrendingUp className="w-8 h-8 text-primary" />,
       title: "Aumento de receita",
-      description: "Agentes 24/7 aceleram vendas, eliminam gargalos e mostram retorno já no primeiro mês, custando muito menos.",
+      description: "Captação de clientes potencializados com atendimento ágil e disponível 24/7, eliminando gargalos e trazendo retorno já nos primeiros meses.",
     },
     {
       icon: <DollarSign className="w-8 h-8 text-primary" />,
       title: "Redução de custos",
-      description: "Substitua equipes caras por agentes inteligentes que gerenciam CRM, suporte e prospecção com eficiência superior e custo mínimo.",
+      description: "Automatize tarefas repetitivas e administrativas, reduzindo a necessidade de equipes grandes e liberando advogados para focarem em atividades estratégicas.",
     },
     {
       icon: <Zap className="w-8 h-8 text-primary" />,
       title: "Implementação veloz",
-      description: "Discovery, MVP e roll-out ágil; da primeira call à operação completa em poucas semanas.",
+      description: "Configuração rápida e eficiente: do primeiro contato até a operação ativa em semanas, sem interromper sua rotina de atendimentos jurídicos.",
     },
     {
       icon: <Settings className="w-8 h-8 text-primary" />,
       title: "Personalização completa",
-      description: "Projetamos agentes sob medida após entender suas dores, refletindo seus fluxos, linguagem e metas de negócio.",
+      description: "Soluções jurídicas digitais feitas sob medida para seu escritório, alinhadas à sua área de atuação, linguagem e objetivos de crescimento.",
     },
     {
       icon: <Clock className="w-8 h-8 text-primary" />,
       title: "Atendimento 24h",
-      description: "Equipe comercial online 24h para esclarecer dúvidas, iniciar projetos e oferecer suporte consultivo sempre que precisar.",
+      description: "Atenda clientes e potenciais clientes a qualquer hora, com respostas automáticas inteligentes que mantêm a proximidade e confiança.",
     },
     {
       icon: <MessageSquare className="w-8 h-8 text-primary" />,
       title: "Suporte técnico e humano",
-      description: "Grupo dedicado em WhatsApp ou Telegram garante respostas rápidas, melhorias contínuas e alinhamento constante ao seu negócio.",
+      description: "Equipe dedicada via WhatsApp ou Telegram para suporte contínuo, melhorias e alinhamento às demandas específicas do setor jurídico.",
     },
   ];
 
