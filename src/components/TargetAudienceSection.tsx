@@ -10,18 +10,11 @@ import {
 export function TargetAudienceSection() {
   const audiences = [
     {
-      icon: <Megaphone className="w-6 h-6 text-primary" />,
-      title: "Agências de marketing digital",
-      description: "Automatize briefing, análise de performance e relatórios, liberando o time criativo para pensar em grandes ideias — não em planilhas.",
-      blogUrl: "/blog/agencias-marketing-digital-ia",
-      image: '/target-audience-marketing-digital.webp?url',
-    },
-    {
-      icon: <Users className="w-6 h-6 text-primary" />,
-      title: "Times de vendas e atendimento",
-      description: "Receba leads pré-qualificados, roteamento inteligente de contatos e recomendações de upsell sem precisar abrir dez abas de CRM.",
-      blogUrl: "/blog/times-vendas-atendimento-ia",
-      image: '/target-audience-time-vendas.webp?url',
+      icon: <Scale className="w-6 h-6 text-primary" />,
+      title: "Escritórios de Advocacia",
+      description: "Deixe a IA cuidar das tarefas de alto volume/baixa criatividade e foque seu talento humano no que realmente move o ponteiro.",
+      blogUrl: "/blog/escritorios-advocacia-ia",
+      image: '/target-audience-escritorios.webp?url',
     },
     {
       icon: <Cog className="w-6 h-6 text-primary" />,
@@ -31,11 +24,18 @@ export function TargetAudienceSection() {
       image: '/target-audience-empresas.webp?url',
     },
     {
-      icon: <Scale className="w-6 h-6 text-primary" />,
-      title: "Escritórios de Advocacia",
-      description: "Deixe a IA cuidar das tarefas de alto volume/baixa criatividade e foque seu talento humano no que realmente move o ponteiro.",
-      blogUrl: "/blog/escritorios-advocacia-ia",
-      image: '/target-audience-escritorios.webp?url',
+      icon: <Users className="w-6 h-6 text-primary" />,
+      title: "Times de vendas e atendimento",
+      description: "Receba leads pré-qualificados, roteamento inteligente de contatos e recomendações de upsell sem precisar abrir dez abas de CRM.",
+      blogUrl: "/blog/times-vendas-atendimento-ia",
+      image: '/target-audience-time-vendas.webp?url',
+    },
+    {
+      icon: <Megaphone className="w-6 h-6 text-primary" />,
+      title: "Agências de marketing digital",
+      description: "Automatize briefing, análise de performance e relatórios, liberando o time criativo para pensar em grandes ideias — não em planilhas.",
+      blogUrl: "/blog/agencias-marketing-digital-ia",
+      image: '/target-audience-marketing-digital.webp?url',
     },
   ];
 
